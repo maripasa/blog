@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    {% for post in posts %}
+        <h1>{{ post.title }}<h1>
+        <p>By {{ post.author }} on {{ post.data_posted }}</p>
+        <p>{{ post.content }}</p>
+    {% endfor %}
+    </body>
+</html>
